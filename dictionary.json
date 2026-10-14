@@ -20,5 +20,7 @@
   "buy": "acheter",
   "acheter": "buy",
   "knife": "couteau",
-  "couteau": "knife"
+  "couteau": "knife",
+  "head": "tete",
+  "tete": "head"
 }
