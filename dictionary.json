@@ -1,175 +1,174 @@
-{
-"french", "english"
-bonjour,hello
-au revoir,goodbye
-merci,thank you
-s'il vous plaît,please
-oui,yes
-non,no
-excusez-moi,excuse me
-pardon,sorry
-ami,friend
-amour,love
-famille,family
-mère,mother
-père,father
-frère,brother
-sœur,sister
-fils,son
-fille,daughter
-enfant,child
-homme,man
-femme,woman
-personne,person
-chat,cat
-chien,dog
-oiseau,bird
-poisson,fish
-cheval,horse
-maison,house
-appartement,apartment
-chambre,bedroom
-cuisine,kitchen
-salle,bathroom
-porte,door
-fenêtre,window
-table,table
-chaise,chair
-lit,bed
-livre,book
-stylo,pen
-papier,paper
-téléphone,phone
-ordinateur,computer
-voiture,car
-vélo,bicycle
-train,train
-avion,airplane
-bus,bus
-rue,street
-ville,city
-pays,country
-monde,world
-école,school
-université,university
-travail,work
-magasin,shop
-marché,market
-restaurant,restaurant
-hôtel,hotel
-hôpital,hospital
-banque,bank
-bureau,office
-jardin,garden
-matin,morning
-après-midi,afternoon
-soir,evening
-nuit,night
-jour,day
-semaine,week
-mois,month
-année,year
-aujourd'hui,today
-demain,tomorrow
-hier,yesterday
-heure,hour
-minute,minute
-seconde,second
-temps,time
-eau,water
-pain,bread
-lait,milk
-café,coffee
-thé,tea
-vin,wine
-fromage,cheese
-viande,meat
-poulet,chicken
-œuf,egg
-riz,rice
-pomme,apple
-orange,orange
-banane,banana
-fraise,strawberry
-légume,vegetable
-carotte,carrot
-pomme de terre,potato
-tomate,tomato
-sel,salt
-sucre,sugar
-manger,to eat
-boire,to drink
-dormir,to sleep
-parler,to speak
-écouter,to listen
-lire,to read
-écrire,to write
-regarder,to watch
-voir,to see
-savoir,to know
-comprendre,to understand
-apprendre,to learn
-enseigner,to teach
-acheter,to buy
-vendre,to sell
-chercher,to search
-trouver,to find
-ouvrir,to open
-fermer,to close
-commencer,to begin
-finir,to finish
-aimer,to like
-adorer,to love
-détester,to hate
-vouloir,to want
-pouvoir,to be able to
-devoir,to have to
-aller,to go
-venir,to come
-partir,to leave
-arriver,to arrive
-prendre,to take
-donner,to give
-faire,to do
-dire,to say
-être,to be
-avoir,to have
-grand,big
-petit,small
-long,long
-court,short
-jeune,young
-vieux,old
-nouveau,new
-bon,good
-mauvais,bad
-beau,beautiful
-facile,easy
-difficile,difficult
-rapide,fast
-lent,slow
-chaud,hot
-froid,cold
-propre,clean
-sale,dirty
-heureux,happy
-triste,sad
-important,important
-possible,possible
-rouge,red
-bleu,blue
-vert,green
-jaune,yellow
-blanc,white
-noir,black
-un,one
-deux,two
-trois,three
-quatre,four
-cinq,five
-six,six
-sept,seven
-huit,eight
-neuf,nine
-dix,ten"
-}
+[
+  { "french": "bonjour", "english": "hello" },
+  { "french": "au revoir", "english": "goodbye" },
+  { "french": "merci", "english": "thank you" },
+  { "french": "s'il vous plaît", "english": "please" },
+  { "french": "oui", "english": "yes" },
+  { "french": "non", "english": "no" },
+  { "french": "excusez-moi", "english": "excuse me" },
+  { "french": "pardon", "english": "sorry" },
+  { "french": "ami", "english": "friend" },
+  { "french": "amour", "english": "love" },
+  { "french": "famille", "english": "family" },
+  { "french": "mère", "english": "mother" },
+  { "french": "père", "english": "father" },
+  { "french": "frère", "english": "brother" },
+  { "french": "sœur", "english": "sister" },
+  { "french": "fils", "english": "son" },
+  { "french": "fille", "english": "daughter" },
+  { "french": "enfant", "english": "child" },
+  { "french": "homme", "english": "man" },
+  { "french": "femme", "english": "woman" },
+  { "french": "personne", "english": "person" },
+  { "french": "chat", "english": "cat" },
+  { "french": "chien", "english": "dog" },
+  { "french": "oiseau", "english": "bird" },
+  { "french": "poisson", "english": "fish" },
+  { "french": "cheval", "english": "horse" },
+  { "french": "maison", "english": "house" },
+  { "french": "appartement", "english": "apartment" },
+  { "french": "chambre", "english": "bedroom" },
+  { "french": "cuisine", "english": "kitchen" },
+  { "french": "salle", "english": "bathroom" },
+  { "french": "porte", "english": "door" },
+  { "french": "fenêtre", "english": "window" },
+  { "french": "table", "english": "table" },
+  { "french": "chaise", "english": "chair" },
+  { "french": "lit", "english": "bed" },
+  { "french": "livre", "english": "book" },
+  { "french": "stylo", "english": "pen" },
+  { "french": "papier", "english": "paper" },
+  { "french": "téléphone", "english": "phone" },
+  { "french": "ordinateur", "english": "computer" },
+  { "french": "voiture", "english": "car" },
+  { "french": "vélo", "english": "bicycle" },
+  { "french": "train", "english": "train" },
+  { "french": "avion", "english": "airplane" },
+  { "french": "bus", "english": "bus" },
+  { "french": "rue", "english": "street" },
+  { "french": "ville", "english": "city" },
+  { "french": "pays", "english": "country" },
+  { "french": "monde", "english": "world" },
+  { "french": "école", "english": "school" },
+  { "french": "université", "english": "university" },
+  { "french": "travail", "english": "work" },
+  { "french": "magasin", "english": "shop" },
+  { "french": "marché", "english": "market" },
+  { "french": "restaurant", "english": "restaurant" },
+  { "french": "hôtel", "english": "hotel" },
+  { "french": "hôpital", "english": "hospital" },
+  { "french": "banque", "english": "bank" },
+  { "french": "bureau", "english": "office" },
+  { "french": "jardin", "english": "garden" },
+  { "french": "matin", "english": "morning" },
+  { "french": "après-midi", "english": "afternoon" },
+  { "french": "soir", "english": "evening" },
+  { "french": "nuit", "english": "night" },
+  { "french": "jour", "english": "day" },
+  { "french": "semaine", "english": "week" },
+  { "french": "mois", "english": "month" },
+  { "french": "année", "english": "year" },
+  { "french": "aujourd'hui", "english": "today" },
+  { "french": "demain", "english": "tomorrow" },
+  { "french": "hier", "english": "yesterday" },
+  { "french": "heure", "english": "hour" },
+  { "french": "minute", "english": "minute" },
+  { "french": "seconde", "english": "second" },
+  { "french": "temps", "english": "time" },
+  { "french": "eau", "english": "water" },
+  { "french": "pain", "english": "bread" },
+  { "french": "lait", "english": "milk" },
+  { "french": "café", "english": "coffee" },
+  { "french": "thé", "english": "tea" },
+  { "french": "vin", "english": "wine" },
+  { "french": "fromage", "english": "cheese" },
+  { "french": "viande", "english": "meat" },
+  { "french": "poulet", "english": "chicken" },
+  { "french": "œuf", "english": "egg" },
+  { "french": "riz", "english": "rice" },
+  { "french": "pomme", "english": "apple" },
+  { "french": "orange", "english": "orange" },
+  { "french": "banane", "english": "banana" },
+  { "french": "fraise", "english": "strawberry" },
+  { "french": "légume", "english": "vegetable" },
+  { "french": "carotte", "english": "carrot" },
+  { "french": "pomme de terre", "english": "potato" },
+  { "french": "tomate", "english": "tomato" },
+  { "french": "sel", "english": "salt" },
+  { "french": "sucre", "english": "sugar" },
+  { "french": "manger", "english": "to eat" },
+  { "french": "boire", "english": "to drink" },
+  { "french": "dormir", "english": "to sleep" },
+  { "french": "parler", "english": "to speak" },
+  { "french": "écouter", "english": "to listen" },
+  { "french": "lire", "english": "to read" },
+  { "french": "écrire", "english": "to write" },
+  { "french": "regarder", "english": "to watch" },
+  { "french": "voir", "english": "to see" },
+  { "french": "savoir", "english": "to know" },
+  { "french": "comprendre", "english": "to understand" },
+  { "french": "apprendre", "english": "to learn" },
+  { "french": "enseigner", "english": "to teach" },
+  { "french": "acheter", "english": "to buy" },
+  { "french": "vendre", "english": "to sell" },
+  { "french": "chercher", "english": "to search" },
+  { "french": "trouver", "english": "to find" },
+  { "french": "ouvrir", "english": "to open" },
+  { "french": "fermer", "english": "to close" },
+  { "french": "commencer", "english": "to begin" },
+  { "french": "finir", "english": "to finish" },
+  { "french": "aimer", "english": "to like" },
+  { "french": "adorer", "english": "to love" },
+  { "french": "détester", "english": "to hate" },
+  { "french": "vouloir", "english": "to want" },
+  { "french": "pouvoir", "english": "to be able to" },
+  { "french": "devoir", "english": "to have to" },
+  { "french": "aller", "english": "to go" },
+  { "french": "venir", "english": "to come" },
+  { "french": "partir", "english": "to leave" },
+  { "french": "arriver", "english": "to arrive" },
+  { "french": "prendre", "english": "to take" },
+  { "french": "donner", "english": "to give" },
+  { "french": "faire", "english": "to do" },
+  { "french": "dire", "english": "to say" },
+  { "french": "être", "english": "to be" },
+  { "french": "avoir", "english": "to have" },
+  { "french": "grand", "english": "big" },
+  { "french": "petit", "english": "small" },
+  { "french": "long", "english": "long" },
+  { "french": "court", "english": "short" },
+  { "french": "jeune", "english": "young" },
+  { "french": "vieux", "english": "old" },
+  { "french": "nouveau", "english": "new" },
+  { "french": "bon", "english": "good" },
+  { "french": "mauvais", "english": "bad" },
+  { "french": "beau", "english": "beautiful" },
+  { "french": "facile", "english": "easy" },
+  { "french": "difficile", "english": "difficult" },
+  { "french": "rapide", "english": "fast" },
+  { "french": "lent", "english": "slow" },
+  { "french": "chaud", "english": "hot" },
+  { "french": "froid", "english": "cold" },
+  { "french": "propre", "english": "clean" },
+  { "french": "sale", "english": "dirty" },
+  { "french": "heureux", "english": "happy" },
+  { "french": "triste", "english": "sad" },
+  { "french": "important", "english": "important" },
+  { "french": "possible", "english": "possible" },
+  { "french": "rouge", "english": "red" },
+  { "french": "bleu", "english": "blue" },
+  { "french": "vert", "english": "green" },
+  { "french": "jaune", "english": "yellow" },
+  { "french": "blanc", "english": "white" },
+  { "french": "noir", "english": "black" },
+  { "french": "un", "english": "one" },
+  { "french": "deux", "english": "two" },
+  { "french": "trois", "english": "three" },
+  { "french": "quatre", "english": "four" },
+  { "french": "cinq", "english": "five" },
+  { "french": "six", "english": "six" },
+  { "french": "sept", "english": "seven" },
+  { "french": "huit", "english": "eight" },
+  { "french": "neuf", "english": "nine" },
+  { "french": "dix", "english": "ten" }
+]
