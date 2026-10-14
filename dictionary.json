@@ -1,26 +1,175 @@
 {
-  "hello": "bonjour",
-  "bonjour": "hello",
-  "goodbye": "au revoir",
-  "au revoir": "goodbye",
-  "thank you": "merci",
-  "merci": "thank you",
-  "please": "s'il vous plaît",
-  "s'il vous plaît": "please",
-  "yes": "oui",
-  "oui": "yes",
-  "no": "non",
-  "non": "no",
-  "chat": "cat",
-  "cat": "chat",
-  "nettoyer": "clean",
-  "clean": "nettoyer",
-  "good evening": "bonsoir",
-  "bonsoir": "good evening",
-  "buy": "acheter",
-  "acheter": "buy",
-  "knife": "couteau",
-  "couteau": "knife",
-  "head": "tete",
-  "tete": "head"
+"french", "english"
+bonjour,hello
+au revoir,goodbye
+merci,thank you
+s'il vous plaît,please
+oui,yes
+non,no
+excusez-moi,excuse me
+pardon,sorry
+ami,friend
+amour,love
+famille,family
+mère,mother
+père,father
+frère,brother
+sœur,sister
+fils,son
+fille,daughter
+enfant,child
+homme,man
+femme,woman
+personne,person
+chat,cat
+chien,dog
+oiseau,bird
+poisson,fish
+cheval,horse
+maison,house
+appartement,apartment
+chambre,bedroom
+cuisine,kitchen
+salle,bathroom
+porte,door
+fenêtre,window
+table,table
+chaise,chair
+lit,bed
+livre,book
+stylo,pen
+papier,paper
+téléphone,phone
+ordinateur,computer
+voiture,car
+vélo,bicycle
+train,train
+avion,airplane
+bus,bus
+rue,street
+ville,city
+pays,country
+monde,world
+école,school
+université,university
+travail,work
+magasin,shop
+marché,market
+restaurant,restaurant
+hôtel,hotel
+hôpital,hospital
+banque,bank
+bureau,office
+jardin,garden
+matin,morning
+après-midi,afternoon
+soir,evening
+nuit,night
+jour,day
+semaine,week
+mois,month
+année,year
+aujourd'hui,today
+demain,tomorrow
+hier,yesterday
+heure,hour
+minute,minute
+seconde,second
+temps,time
+eau,water
+pain,bread
+lait,milk
+café,coffee
+thé,tea
+vin,wine
+fromage,cheese
+viande,meat
+poulet,chicken
+œuf,egg
+riz,rice
+pomme,apple
+orange,orange
+banane,banana
+fraise,strawberry
+légume,vegetable
+carotte,carrot
+pomme de terre,potato
+tomate,tomato
+sel,salt
+sucre,sugar
+manger,to eat
+boire,to drink
+dormir,to sleep
+parler,to speak
+écouter,to listen
+lire,to read
+écrire,to write
+regarder,to watch
+voir,to see
+savoir,to know
+comprendre,to understand
+apprendre,to learn
+enseigner,to teach
+acheter,to buy
+vendre,to sell
+chercher,to search
+trouver,to find
+ouvrir,to open
+fermer,to close
+commencer,to begin
+finir,to finish
+aimer,to like
+adorer,to love
+détester,to hate
+vouloir,to want
+pouvoir,to be able to
+devoir,to have to
+aller,to go
+venir,to come
+partir,to leave
+arriver,to arrive
+prendre,to take
+donner,to give
+faire,to do
+dire,to say
+être,to be
+avoir,to have
+grand,big
+petit,small
+long,long
+court,short
+jeune,young
+vieux,old
+nouveau,new
+bon,good
+mauvais,bad
+beau,beautiful
+facile,easy
+difficile,difficult
+rapide,fast
+lent,slow
+chaud,hot
+froid,cold
+propre,clean
+sale,dirty
+heureux,happy
+triste,sad
+important,important
+possible,possible
+rouge,red
+bleu,blue
+vert,green
+jaune,yellow
+blanc,white
+noir,black
+un,one
+deux,two
+trois,three
+quatre,four
+cinq,five
+six,six
+sept,seven
+huit,eight
+neuf,nine
+dix,ten"
 }

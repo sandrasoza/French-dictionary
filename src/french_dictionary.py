@@ -1,66 +1,87 @@
-import json
-from pathlib import Path
+import os
+import sys
 from typing import Optional
 
+from pymongo import MongoClient
+from pymongo.collection import Collection
+from pymongo.errors import DuplicateKeyError, PyMongoError
+from dotenv import load_dotenv
 
-DEFAULT_WORDS = {
-    "hello": "bonjour",
-    "goodbye": "au revoir",
-    "thank you": "merci",
-    "please": "s'il vous plaît",
-    "yes": "oui",
-    "no": "non",
-}
-DATA_FILE = Path(__file__).resolve().parent.parent / "dictionary.json"
+load_dotenv()
 
 
-# Builds the default dictionary and adds any translations saved from earlier runs.
-def create_dictionary(file_path: Path = DATA_FILE) -> dict[str, str]:
-    """Create a dictionary that can translate in either direction."""
-    dictionary = {}
-    for english, french in DEFAULT_WORDS.items():
-        add_word(dictionary, english, french)
-    if file_path.exists():
-        try:
-            saved_words = json.loads(file_path.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError):
-            saved_words = {}
-        for english, french in saved_words.items():
-            add_word(dictionary, english, french)
-    return dictionary
+CONNECTION_STRING = os.environ["MONGODB_URI"]
+client = MongoClient(CONNECTION_STRING)
+database = client["FrenchDictionary"]
+vocab_collection: Collection = database["translations"]
+
+def connect_to_db() -> None:
+    try:
+        #Connects to the cluster
+        client.admin.command("ping")
+
+        vocab_collection.create_index("english", unique=True)
+        vocab_collection.create_index("french", unique=True)
+
+        print("Success, you are connected with MongoDB")
+    except PyMongoError as error:
+        print(f"Failure, unable to establish connection with MongoDB: {error}")
+        sys.exit(1)
 
 
-# Adds an English/French pair and both directions of its translation.
-def add_word(dictionary: dict[str, str], english: str, french: str) -> None:
-    """Add an English/French pair and its reverse lookup."""
-    english = english.strip().lower()
-    french = french.strip().lower()
+def normalize(value: str) -> str:
+    """ Normalize user input"""
+    return value.strip().lower()
+
+
+def add_word(english: str, french: str) -> None:
+    """Store one pair of english & french word"""
+    english = normalize(english)
+    french = normalize(french)
+
     if not english or not french:
-        raise ValueError("Both words are required.")
-    dictionary[english] = french
-    dictionary[french] = english
+        raise ValueError("Both words are required")
+    
+    try:
+        vocab_collection.insert_one({
+            "english": english,
+            "french": french
+        })
+    except DuplicateKeyError:
+        raise ValueError("Translation already exist")
 
-
-# Writes the current translations to the JSON data file.
-def save_dictionary(dictionary: dict[str, str], file_path: Path = DATA_FILE) -> None:
-    """Save all translations so they are available the next time the program runs."""
-    file_path.write_text(json.dumps(dictionary, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 # Looks up a word and returns its translation when it exists.
-def translate(word: str, dictionary: dict[str, str]) -> Optional[str]:
+def translate(word: str) -> Optional[str]:
     """Return a translation, or None when the word is not in the dictionary."""
-    return dictionary.get(word.strip().lower())
+    word = normalize(word)
+
+    document = vocab_collection.find_one({
+        "$or": [
+            {"english": word},
+            {"french": word}
+        ]
+    })
+
+    if document is None:
+        return None
+
+    if document["english"] == word:
+        return document["french"]
+
+    return document["english"]
 
 
 # Runs the interactive command-line dictionary program.
 def main() -> None:
-    dictionary = create_dictionary()
+    connect_to_db()
     print("English/French dictionary")
     print("Type a word to translate, 'add' to add a pair, or 'exit' to quit.")
 
     while True:
         command = input("> ").strip()
+        
         if command.lower() == "exit":
             print("Goodbye!")
             return
@@ -68,29 +89,29 @@ def main() -> None:
             english = input("English word: ")
             french = input("French translation: ")
             try:
-                add_word(dictionary, english, french)
+                add_word(english, french)
             except ValueError as error:
                 print(error)
             else:
-                save_dictionary(dictionary)
                 print(f"Added: {english.strip()} <-> {french.strip()}")
             continue
 
-        result = translate(command, dictionary)
-        if result is None:
-            french = input("Word not found. Enter its French translation (or press Enter to skip): ")
-            if french.strip():
-                try:
-                    add_word(dictionary, command, french)
-                except ValueError as error:
-                    print(error)
-                else:
-                    save_dictionary(dictionary)
-                    print(f"Added: {command} <-> {french.strip()}")
-            else:
-                print("Word not added.")
-        else:
+        result = translate(command)
+        if result is not None:
             print(result)
+            continue
+
+        
+        french = input("Word not found. Enter its French translation (or press Enter to skip): ")
+        if french.strip():
+            try:
+                add_word(command, french)
+            except ValueError as error:
+                print(error)
+            else:
+                print(f"Added: {command} <-> {french.strip()}")
+        else:
+            print("Word not added.")
 
 
 if __name__ == "__main__":
