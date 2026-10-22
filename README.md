@@ -1,6 +1,6 @@
 # French Dictionary
 
-A simple French-to-English dictionary stored as JSON data.
+A French-to-English dictionary application that connects directly to a MongoDB database.
 
 ## Contents
 
@@ -15,9 +15,11 @@ The dictionary includes common:
 - Adjectives
 - Colors and numbers
 
-## Data Format
+## Database
 
-Entries are stored in `dictionary.json` using this format:
+Dictionary entries are stored and retrieved from MongoDB. The application connects directly to the database.
+
+Each entry contains:
 
 ```json
 {
@@ -26,10 +28,6 @@ Entries are stored in `dictionary.json` using this format:
 }
 ```
 
-## Usage
-
-Load `dictionary.json` in any programming language that supports JSON, then search the `french` field to find its English translation.
-
 ## License
 
-This project is for educational and personal use.
+This project is for personal use.
